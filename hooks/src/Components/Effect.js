@@ -19,6 +19,7 @@ function EffectComponent(){
                 style={{color: isRed ? "red" : "orange"}}
             >Use Effect Example</h1>
             <h1>Example: {time.toLocaleTimeString()}</h1>
+            <h2>Example: {time.toLocaleDateString()}</h2>
         </div>
     )
 
