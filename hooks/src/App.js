@@ -3,6 +3,7 @@ import StateComponent from './Components/State';
 import EffectComponent from './Components/Effect';
 import ContextComponent from './Components/Context';
 import RefComponent from './Components/Ref';
+import ReducerComponent from './Components/Reducer';
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
      <div>
         <h2>Ref Example</h2>
           <RefComponent />
+     </div>
+     <div>
+        <h2>Reducer Example</h2>
+          <ReducerComponent />
      </div>
      
     </div>
