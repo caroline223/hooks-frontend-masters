@@ -2,6 +2,7 @@ import './App.css';
 import StateComponent from './Components/State';
 import EffectComponent from './Components/Effect';
 import ContextComponent from './Components/Context';
+import RefComponent from './Ref';
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
      <div>
         <h2>Context Example</h2>
           <ContextComponent />
+     </div>
+     <div>
+        <h2>Ref Example</h2>
+          <RefComponent />
      </div>
      
     </div>
