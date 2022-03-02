@@ -4,6 +4,7 @@ import EffectComponent from './Components/Effect';
 import ContextComponent from './Components/Context';
 import RefComponent from './Components/Ref';
 import ReducerComponent from './Components/Reducer';
+import MemoComponent from './Components/Memo';
 
 function App() {
   return (
@@ -28,6 +29,10 @@ function App() {
      <div>
         <h2>Reducer Example</h2>
           <ReducerComponent />
+     </div>
+     <div>
+        <h2>Memo Example</h2>
+          <MemoComponent />
      </div>
      
     </div>
