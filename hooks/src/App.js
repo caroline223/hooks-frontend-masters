@@ -6,6 +6,7 @@ import RefComponent from './Components/Ref';
 import ReducerComponent from './Components/Reducer';
 import MemoComponent from './Components/Memo';
 import CallbackComponent from './Components/Callback';
+import LayoutEffectComponent from './Components/LayoutEffect';
 
 function App() {
   return (
@@ -38,6 +39,10 @@ function App() {
      <div>
         <h2>CallBack Example</h2>
           <CallbackComponent />
+     </div>
+     <div>
+        <h2>LayoutEffect Example (with useRef)</h2>
+         <LayoutEffectComponent />
      </div>
      
     </div>
