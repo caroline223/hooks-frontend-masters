@@ -8,6 +8,7 @@ import MemoComponent from './Components/Memo';
 import CallbackComponent from './Components/Callback';
 import LayoutEffectComponent from './Components/LayoutEffect';
 import ImperativeHandleComponent from './Components/ImperativeHandle';
+import DebugValueComponent from './Components/DebugValue';
 
 
 function App() {
@@ -49,6 +50,10 @@ function App() {
      <div>
        <h2>ImperativeHandle Example</h2>
        <ImperativeHandleComponent />
+     </div>
+     <div>
+       <h2>DebugValue Example</h2>
+       <DebugValueComponent />
      </div>
      
     </div>
