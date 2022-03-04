@@ -14,7 +14,7 @@ const ExpensiveComputationalComponent = memo(({compute, count}) => {
 const CallbackComponent = () => {
 
     const [time, setTime ] = useState(new Date());
-    const [count, setCount ] = useState(0)
+    const [count, setCount ] = useState(1)
 
     useEffect(() => {
        const timer = setTimeout(() => setTime(new Date()), 1000);
@@ -31,10 +31,11 @@ const CallbackComponent = () => {
 
     return(
         <div>
+            <h2>{time.toLocaleTimeString}</h2>
             <button onClick={() => setCount(count + 1)}>Current Count: {count}</button> &nbsp;
             <button onClick={() => setCount(count - 1)}>Previous Count: {count - 1}</button>
             <ExpensiveComputationalComponent 
-                compute={useCallback(fibonacci, [])}
+                compute={useCallback(fibonacci, [fibonacci])}
                 //takes a function and dependency and gives back the function every single re-render
                 count={count}
             />
