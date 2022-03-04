@@ -11,7 +11,7 @@ function LayoutEffectComponent() {
     useLayoutEffect(() => {
         setHeight(el.current.clientHeight);
         setWidth(el.current.clientWidth);
-    })
+    }, [])
 
     return(
         <div>
