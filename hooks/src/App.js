@@ -5,6 +5,7 @@ import ContextComponent from './Components/Context';
 import RefComponent from './Components/Ref';
 import ReducerComponent from './Components/Reducer';
 import MemoComponent from './Components/Memo';
+import CallbackComponent from './Components/Callback';
 
 function App() {
   return (
@@ -33,6 +34,10 @@ function App() {
      <div>
         <h2>Memo Example</h2>
           <MemoComponent />
+     </div>
+     <div>
+        <h2>CallBack Example</h2>
+          <CallbackComponent />
      </div>
      
     </div>
