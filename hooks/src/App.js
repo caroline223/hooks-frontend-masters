@@ -9,6 +9,7 @@ import CallbackComponent from './Components/Callback';
 import LayoutEffectComponent from './Components/LayoutEffect';
 import ImperativeHandleComponent from './Components/ImperativeHandle';
 import DebugValueComponent from './Components/DebugValue';
+import InputValue from './Components/Inputs';
 
 
 function App() {
@@ -54,6 +55,10 @@ function App() {
      <div>
        <h2>DebugValue Example</h2>
        <DebugValueComponent />
+     </div>
+     <div>
+       <h2>InputValue Example</h2>
+       <InputValue />
      </div>
      
     </div>
