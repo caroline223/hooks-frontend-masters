@@ -16,7 +16,7 @@ function InputValue(){
         <div>
             <div
                onClick={() => setColor(!color)}
-               style={{color: color ? "pink" : "red"}}
+               style={{color: color ? "blue" : "purple"}}
             >
                 <label>Type Here To Capitalize </label> 
             </div>

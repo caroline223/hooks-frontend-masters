@@ -11,9 +11,18 @@ import ImperativeHandleComponent from './Components/ImperativeHandle';
 import DebugValueComponent from './Components/DebugValue';
 import InputValue from './Components/Inputs';
 
+import { useState } from 'react'
 
 function App() {
+
+  const [color, setColor] = useState(false)
   return (
+    <div
+      onClick={() => setColor(!color)}
+      style={{backgroundColor : color ? "gray" : "blue"}}
+    >
+
+    
     <div className="App">
      <h1>React Page Examples</h1>
      <div>
@@ -61,6 +70,7 @@ function App() {
        <InputValue />
      </div>
      
+    </div>
     </div>
   );
 }
