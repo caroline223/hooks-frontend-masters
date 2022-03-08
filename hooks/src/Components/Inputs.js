@@ -16,13 +16,13 @@ function InputValue(){
         <div>
             <div
                onClick={() => setColor(!color)}
-               style={{color: color ? "blue" : "purple"}}
+               style={{color: color ? "gray" : "brown"}}
             >
-                <label>Type Here To Capitalize </label> 
+                <label>Type Here To Capitalize or Lowercase </label> 
             </div>
             <input value={text} onChange={ChangeText} /> &nbsp; <br />
-            <p>{text.toUpperCase()}</p>
-            <p>{text.toLowerCase()}</p>
+            <p style={{color: 'white'}}>{text.toUpperCase()}</p>
+            <p style={{color: 'white'}}>{text.toLowerCase()}</p>
         </div>
     )
 
